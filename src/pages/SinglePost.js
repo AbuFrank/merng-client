@@ -1,13 +1,11 @@
 import gql from "graphql-tag";
 import React, { useContext, useRef, useState } from "react";
 import { useMutation, useQuery } from "@apollo/react-hooks";
-import { FETCH_POSTS_QUERY } from "../util/graphql";
 import { AuthContext } from "../context/auth";
 import moment from "moment";
 import LikeButton from "../components/LikeButton";
 import DeleteButton from "../components/DeleteButton";
 import MyPopup from "../util/MyPopup";
-import { Link } from "react-router-dom";
 
 function SinglePost(props) {
   const postId = props.match.params.postId;
