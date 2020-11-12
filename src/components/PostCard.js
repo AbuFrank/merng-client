@@ -18,6 +18,7 @@ function PostCard({
         <img
           className="right floated mini ui image"
           src="https://react.semantic-ui.com/images/avatar/large/jenny.jpg"
+          alt="profile"
         />
         <div className="header">{username}</div>
         <Link className="meta" to={`/posts/${id}`}>

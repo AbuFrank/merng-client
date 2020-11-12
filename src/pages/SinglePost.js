@@ -58,6 +58,7 @@ function SinglePost(props) {
             <img
               src="https://react.semantic-ui.com/images/wireframe/paragraph.png"
               className="ui image"
+              alt="profile"
             />
           </div>
         </div>
