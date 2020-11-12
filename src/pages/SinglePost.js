@@ -108,7 +108,10 @@ function SinglePost(props) {
                         type="submit"
                         className="ui button teal"
                         disabled={comment.trim() === ""}
-                        onClick={submitComment}
+                        onClick={(event) => {
+                          event.preventDefault();
+                          submitComment();
+                        }}
                       >
                         Submit
                       </button>

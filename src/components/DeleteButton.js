@@ -18,7 +18,6 @@ function DeleteButton({ postId, commentId, callback }) {
           query: FETCH_POSTS_QUERY,
         });
 
-        console.log("Data", data);
         proxy.writeQuery({
           query: FETCH_POSTS_QUERY,
           data: {

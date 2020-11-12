@@ -12,7 +12,6 @@ function Home() {
   const { loading, data } = useQuery(FETCH_POSTS_QUERY);
 
   const { getPosts: posts } = data ? data : [];
-  console.log("Posts: ", posts);
   return (
     <div className="ui three column divided grid">
       <h1 className="text-center">Recent Posts</h1>
